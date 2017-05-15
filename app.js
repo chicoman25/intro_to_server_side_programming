@@ -2,7 +2,7 @@
 var express = require('express'); //reference
 var mongodb = require('mongodb').MongoClient;
 var app = express(); //instance
-var port = 5000;
+var port = process.env.PORT || 5000;
 
 app.use(express.static('public'));
 
